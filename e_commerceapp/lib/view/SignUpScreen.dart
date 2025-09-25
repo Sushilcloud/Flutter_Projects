@@ -22,7 +22,13 @@ class Signupscreen extends StatelessWidget {
           Text(
             'Create Account',style: AppTextStyles.withColor(AppTextStyles.hi,
             Theme.of(context).textTheme.bodyLarge!.color!,),
-          )
+          ),
+          const SizedBox(height: 20,),
+
+          Text(
+            'Signup to get started',style: AppTextStyles.withColor(AppTextStyles.hi,
+            Theme.of(context).textTheme.bodyLarge!.color!,),
+          ),
         ],
 
     ),
