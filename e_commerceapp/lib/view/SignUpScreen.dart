@@ -1,3 +1,4 @@
+import 'package:e_commerceapp/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
@@ -16,7 +17,12 @@ class Signupscreen extends StatelessWidget {
         children: [
           // back button
           IconButton(onPressed: ()=>Get.back(), icon: Icon(Icons.arrow_back_ios_new_rounded)),
-
+          // create Account
+          const SizedBox(height: 20,),
+          Text(
+            'Create Account',style: AppTextStyles.withColor(AppTextStyles.hi,
+            Theme.of(context).textTheme.bodyLarge!.color!,),
+          )
         ],
 
     ),
