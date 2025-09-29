@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../controllers/auth_controller.dart';
+import 'forget_password_screen.dart';
 
 
 class SigninScreen extends StatelessWidget {
@@ -71,9 +72,14 @@ class SigninScreen extends StatelessWidget {
 
                 Align(
                   alignment: Alignment.centerRight,
-                  child: TextButton(onPressed: (){}, child:
-                  Text("Forgot Password?",style: AppTextStyles.withColor(AppTextStyles.buttonMedium,
-                  Theme.of(context).primaryColor),)),
+                  child: TextButton(
+                      onPressed: ()=>Get.to(()=>ForgetPasswordScreen()),
+                      child:Text("Forgot Password?",
+                        style: AppTextStyles.withColor(AppTextStyles.buttonMedium,
+                        Theme.of(context).primaryColor
+                        ), // Use primaryColor from Theme
+                      ),
+                  ),
                 ),
 
                 const SizedBox(height: 24,),
