@@ -1,5 +1,6 @@
 import 'package:e_commerceapp/view/widgets/category_chips.dart';
 import 'package:e_commerceapp/view/widgets/custom_search_bar.dart';
+import 'package:e_commerceapp/view/widgets/sale_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -74,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-          ],
+            ],
               ),
         ),
 
@@ -83,6 +84,40 @@ class HomeScreen extends StatelessWidget {
 
           // category chips
           const CategoryChips(),
+
+          // sale banner
+          const SaleBanner(),
+
+          // popular product
+           Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+               const Text('Popular Products',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){},
+                  child:  Text(
+                    'See All',
+                    style: TextStyle(
+                      color: Theme.of(context).primaryColor,
+                    ),
+
+                  ),
+                ),
+
+              ],
+
+            ),
+          )
 
       ],
 
