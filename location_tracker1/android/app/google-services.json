@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455703642509",
+    "project_id": "childlocationapp",
+    "storage_bucket": "childlocationapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455703642509:android:6c8c64c6bd4ca67a05bdc4",
+        "android_client_info": {
+          "package_name": "com.example.child_location_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0TdEzNi6rurl0Ctc4TBE7LJ0Hqlk3hk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455703642509:android:3d2261fcaae6725605bdc4",
+        "android_client_info": {
+          "package_name": "com.example.location_tracker1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0TdEzNi6rurl0Ctc4TBE7LJ0Hqlk3hk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

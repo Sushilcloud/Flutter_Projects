@@ -1,3 +1,4 @@
+import 'package:e_commerceapp/view/all_product_screen.dart';
 import 'package:e_commerceapp/view/widgets/category_chips.dart';
 import 'package:e_commerceapp/view/widgets/custom_search_bar.dart';
 import 'package:e_commerceapp/view/widgets/product_grid.dart';
@@ -105,7 +106,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){},
+                  onTap: ()=>Get.to(()=>AllProductScreen()),
                   child:  Text(
                     'See All',
                     style: TextStyle(
@@ -121,7 +122,7 @@ class HomeScreen extends StatelessWidget {
           ),
 
           // product grid
-          const Expanded(child: ProductGrid())
+          const Expanded(child: ProductGrid()),
 
 
       ],
