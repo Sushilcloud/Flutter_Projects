@@ -106,7 +106,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: ()=>Get.to(()=>AllProductScreen()),
+                  onTap: ()=>Get.to(()=>const AllProductScreen()),
                   child:  Text(
                     'See All',
                     style: TextStyle(
