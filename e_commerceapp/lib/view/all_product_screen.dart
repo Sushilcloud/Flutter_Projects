@@ -1,5 +1,6 @@
 import 'package:e_commerceapp/utils/app_textstyles.dart';
 import 'package:e_commerceapp/view/widgets/filter_bottom_sheet.dart';
+import 'package:e_commerceapp/view/widgets/product_grid.dart';
 import 'package:flutter/material.dart';
 
 class AllProductScreen extends StatelessWidget {
@@ -34,6 +35,7 @@ class AllProductScreen extends StatelessWidget {
 
         ],
       ),
+      body:const ProductGrid()
     );
   }
 }

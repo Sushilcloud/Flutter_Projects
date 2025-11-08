@@ -30,11 +30,11 @@ final List<Product> products = [
 
   const Product(name: 'Jorden Shoes', category: 'Footwear',
       price: 29,oldPrice: 205, imageUrl: 'assets/images/shoe.jpg',
-      description: 'This is a description of product 3'),
+      description: 'This is a description of product 3',isFavorite: true),
 
   const Product(name: 'Puma Shoes', category: 'Footwear',
       price: 129,oldPrice: 285, imageUrl: 'assets/images/shoe2.jpg',
-      description: 'This is a description of product 3'),
+      description: 'This is a description of product 3',isFavorite: true),
 
 
 

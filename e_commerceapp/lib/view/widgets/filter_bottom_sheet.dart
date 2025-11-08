@@ -98,9 +98,48 @@ class FilterBottomSheet{
               spacing: 8,
               runSpacing: 8,
               children: [
+                'All',
+                'Shoe',
+                'Clothing',
+                'Accessories',
+                'Bags',
+                'Electronics'
 
 
-              ],
+              ].map((category)=>FilterChip(
+                label: Text(category),
+                selected: category=='All',
+                onSelected: (selected){},
+                backgroundColor: Theme.of(context).cardColor,
+                selectedColor: Theme.of(context).primaryColor.withOpacity(0.2),
+                labelStyle: AppTextStyles.withColor(
+                 AppTextStyles.bodyMedium,
+                  category=='All'
+                      ?Theme.of(context).primaryColor:
+                  Theme.of(context).textTheme.bodyLarge!.color!,
+
+
+                ),
+
+
+              )).toList(),
+
+            ),
+
+            const SizedBox(height: 24),
+
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: ()=>Get.back(),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).primaryColor,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),),
+                child: Text('Apply Filters',style: AppTextStyles.withColor(AppTextStyles.bodyMedium, Colors.white),),
+              ),
 
             )
 

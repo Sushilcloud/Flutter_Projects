@@ -1,4 +1,5 @@
 import 'package:e_commerceapp/view/all_product_screen.dart';
+import 'package:e_commerceapp/view/cart_screen.dart';
 import 'package:e_commerceapp/view/widgets/category_chips.dart';
 import 'package:e_commerceapp/view/widgets/custom_search_bar.dart';
 import 'package:e_commerceapp/view/widgets/product_grid.dart';
@@ -58,7 +59,7 @@ class HomeScreen extends StatelessWidget {
               ),
               // cart Button
               IconButton(
-                onPressed: () {},
+                onPressed: ()=>Get.to(()=>CartScreen()),
                 icon: const Icon(
                   Icons.shopping_bag_outlined,
                 ),

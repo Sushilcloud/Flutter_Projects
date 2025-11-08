@@ -1,3 +1,4 @@
+import 'package:e_commerceapp/view/cart_screen.dart';
 import 'package:e_commerceapp/view/shopping_screen.dart';
 import 'package:e_commerceapp/view/widgets/custom_botton_navbar.dart';
 import 'package:e_commerceapp/view/wishlist_screen.dart';
@@ -31,6 +32,7 @@ class MainScreen extends StatelessWidget {
                         ShoppingScreen(),
                         WishlistScreen(),
                         AccountsScreen(),
+
 
                       ],
 
