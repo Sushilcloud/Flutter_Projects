@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../controllers/theme_controller.dart';
+import 'notification_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -52,7 +53,7 @@ class HomeScreen extends StatelessWidget {
               // notification icon
               const Spacer(),
               IconButton(
-                onPressed: () {},
+                onPressed: ()=>Get.to(()=> NotificationScreen()) ,
                   icon: const Icon(
                     Icons.notifications_outlined,
                   ),

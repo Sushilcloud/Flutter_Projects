@@ -1,4 +1,6 @@
+import 'package:e_commerceapp/features/screen/my_orders_screen.dart';
 import 'package:e_commerceapp/utils/app_textstyles.dart';
+import 'package:e_commerceapp/view/setting_screen.dart';
 import 'package:e_commerceapp/view/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -157,7 +159,7 @@ class AccountsScreen extends StatelessWidget {
                 if(item['title']=='Logout'){
                   _showLogoutDialog(context);
                 }else if(item['title']=='My Orders'){
-
+                  Get.to(()=>MyOrdersScreen());
                 }
                   else if(item['title']=='My Order'){
 
